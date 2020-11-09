@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Yeseva+One&display=swap");
+body, html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root {
+  font-size: 16px;
+}
+
+body {
+  background: #060509;
+}
+
+.logo {
+  grid-column: 2 / -2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-top: .4em;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 80px;
+  -webkit-transition: 100ms ease filter;
+  transition: 100ms ease filter;
+}
+
+.logo:hover {
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
+}
+
+.logo-bottom {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4em;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  justify-self: center;
+  width: 200px;
+  -webkit-transition: 100ms ease filter;
+  transition: 100ms ease filter;
+}
+
+.logo-bottom:hover {
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
+}
+
+main {
+  color: #e5e5e5;
+}
+
+.featured-container {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1em auto auto auto auto 1em;
+  -ms-grid-columns: 1em auto auto 1em;
+      grid-template: 1em auto auto auto auto 1em / 1em auto auto 1em;
+}
+
+.featured-container .featured-photo {
+  height: 90vh;
+  min-height: 50vh;
+  grid-column: 1 / -1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  min-height: 350px;
+}
+
+.featured-container .featured-title {
+  width: 95%;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 4rem;
+  -ms-grid-column: 2;
+  grid-column: 2 / 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.featured-container .featured-director {
+  grid-column: 1 / -1;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+
+.featured-container .featured-director .directed {
+  font-size: 0.7rem;
+}
+
+.featured-container .netflix-cta {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  grid-column: 2 / -2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-family: "Roboto", sans-serif;
+  font-size: .7rem;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.featured-container .featured-netflix {
+  color: #e5e5e5;
+  opacity: .7;
+  font-size: 5rem;
+  grid-column: 2 / -2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: opacity 250ms ease;
+  transition: opacity 250ms ease;
+}
+
+.featured-container .featured-netflix:hover {
+  opacity: .9;
+}
+
+.featured-container .featured-netflix:focus {
+  opacity: .9;
+}
+
+.featured-container .featured-description {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+}
+
+.featured-container .logo {
+  width: 100%;
+  max-width: 200px;
+}
+
+.featured-container .featured-photo {
+  background-blend-mode: multiply;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.featured-container .movie-card-photo {
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  .featured-container .logo {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    width: 15%;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .featured-container .featured-container {
+    -ms-grid-rows: 1em auto auto auto auto 1em;
+    -ms-grid-columns: 1em auto auto auto 1em;
+        grid-template: 1em auto auto auto auto 1em / 1em auto auto auto 1em;
+    height: 10vh;
+  }
+  .featured-container .featured-title {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    font-size: 6rem;
+  }
+  .featured-container .featured-director {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    font-size: 2rem;
+  }
+  .featured-container .netflix-cta {
+    grid-row: 3 / -3;
+    grid-column: 3 / -3;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .featured-container .featured-netflix {
+    font-size: 9em;
+    grid-column: 3 / -3;
+    grid-row: 3 / -3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .featured-container .featured-description {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    grid-row: 3 / -3;
+    font-size: 1.2rem;
+    max-width: 700px;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+}
+
+.ghibli-cta {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.movies-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  padding: 1em;
+  gap: 2em;
+}
+
+.movies-container::-webkit-scrollbar {
+  height: 8px;
+  opacity: .1;
+}
+
+.movies-container::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+  background: rgba(128, 128, 128, 0.8);
+}
+
+.movies-container::-webkit-scrollbar-button {
+  opacity: .2;
+}
+
+.movies-container .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+  -ms-grid-columns: 1em auto auto 1em;
+      grid-template: auto auto /  1em auto auto 1em;
+  gap: 1em;
+  border-radius: 20px;
+  min-width: 330px;
+  height: 40vh;
+  min-height: 40vh;
+}
+
+.movies-container .item .movie-card-photo {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+}
+
+.movies-container .item .movie-title {
+  grid-row: 1 / -1;
+  grid-column: 2 / -2;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 2rem;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.movies-container .item .movie-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-size: 1.4rem;
+  grid-column: 2/ -2;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: end;
+}
+
+.movies-container .item .movie-play {
+  color: #e5e5e5;
+  font-size: 5rem;
+  grid-row: 2 / -2;
+  grid-column: 2 / -2;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  opacity: .7;
+}
+
+.movies-container .item .movie-play:hover {
+  opacity: .9;
+}
+
+.movies-container .item .movie-play:focus {
+  opacity: .9;
+}
+
+.top-rated {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.suggested-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.suggested-container .suggested-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+  -ms-grid-columns: 1em auto auto 1em;
+      grid-template: auto auto /  1em auto auto 1em;
+  gap: 2em;
+  border-radius: 20px;
+  height: 40vh;
+  min-height: 40vh;
+  padding-bottom: 2rem;
+}
+
+.suggested-container .suggested-item .suggested-photo {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  min-height: 30vh;
+  max-height: 30vh;
+  background-blend-mode: multiply;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+}
+
+.suggested-container .suggested-item .suggested-title {
+  grid-column: 2 / -2;
+  grid-row: 1 / -1;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 2rem;
+  max-width: 300px;
+  color: #e5e5e5;
+}
+
+.suggested-container .suggested-item .suggested-rate {
+  grid-column: 2 / -2;
+  grid-row: 2 / -2;
+  font-family: "Roboto", sans-serif;
+}
+
+.suggested-container .suggested-item .suggested-director {
+  grid-column: 2 / -2;
+  grid-row: 2 / -2;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-size: .8rem;
+  font-family: "Roboto", sans-serif;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+/*# sourceMappingURL=styles.css.map */
